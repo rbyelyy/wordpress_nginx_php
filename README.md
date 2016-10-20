@@ -16,6 +16,11 @@
 4. Wait till Nginx is started (2-3 sec)
  - http://127.0.0.1:80
 
+Update:
+For uploading WP content/settings/DB follwoing command have to be used (not done yet for DB):
+sudo docker run --volume /home/root4u/wordpress_nginx_php/wp-content/:/usr/share/nginx/www/ -p 80:80 -p 2222:22 --name docker-name -d private/wordpress5
+For final solution have to be implement DB but not only the content. For now "Db connection error is occuring"
+
 
 Tips:
  - Check running conteiners:
